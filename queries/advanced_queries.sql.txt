@@ -1,0 +1,8 @@
+CTE
+Subqueries
+ROW_NUMBER()
+RANK()
+DENSE_RANK()
+LAG()
+LEAD()
+CASE
