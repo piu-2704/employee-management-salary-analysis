@@ -79,3 +79,66 @@ VALUES (260, 'Recruiting', NULL, 1700);
 INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (270, 'Payroll', NULL, 1700);
 
+-- Insert Employee Data
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(100, 'Steven', 'King', 'SKING', '515.123.4567',
+TO_DATE('17-JUN-2003','DD-MON-YYYY'), 'AD_PRES', 24000, NULL, NULL, 90, 'Pune');
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(101, 'Neena', 'Kochhar', 'NKOCHHAR', '515.123.4568',
+TO_DATE('21-SEP-2005','DD-MON-YYYY'), 'AD_VP', 17000, NULL, 100, 90, 'Pune');
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(102, 'Lex', 'De Haan', 'LDEHAAN', '515.123.4569',
+TO_DATE('13-JAN-2001','DD-MON-YYYY'), 'AD_VP', 17000, NULL, 100, 90, 'Mumbai');
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(103, 'Alexander', 'Hunold', 'AHUNOLD', '590.423.4567',
+TO_DATE('03-JAN-2006','DD-MON-YYYY'), 'IT_PROG', 9000, NULL, 102, 60, 'Pune');
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(104, 'Bruce', 'Ernst', 'BERNST', '590.423.4568',
+TO_DATE('21-MAY-2007','DD-MON-YYYY'), 'IT_PROG', 6000, NULL, 103, 60, 'Pune');
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(105, 'David', 'Austin', 'DAUSTIN', '590.423.4569',
+TO_DATE('25-JUN-2005','DD-MON-YYYY'), 'IT_PROG', 4800, NULL, 103, 60, 'Nashik');
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(106, 'Valli', 'Pataballa', 'VPATABAL', '590.423.4169',
+TO_DATE('05-FEB-2006','DD-MON-YYYY'), 'IT_PROG', 4800, NULL, 103, 60, 'Pune');
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(107, 'Diana', 'Lorentz', 'DLORENTZ', '590.423.5567',
+TO_DATE('07-FEB-2007','DD-MON-YYYY'), 'IT_PROG', 4200, NULL, 103, 60, 'Mumbai');
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(108, 'Nancy', 'Greenberg', 'NGREENBE', '515.124.4569',
+TO_DATE('17-AUG-2002','DD-MON-YYYY'), 'FI_MGR', 12000, NULL, 101, 100, 'Pune');
+
+INSERT INTO employees
+(employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id, address)
+VALUES
+(109, 'Daniel', 'Faviet', 'DFAVIET', '515.124.4169',
+TO_DATE('16-AUG-2002','DD-MON-YYYY'), 'FI_ACCOUNT', 9000, NULL, 108, 100, 'Nashik');
+
+COMMIT;
